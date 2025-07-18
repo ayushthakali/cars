@@ -4,7 +4,7 @@ import App from "./app";
 import { store } from "./store";
 import { Provider } from "react-redux";
 import "bulma/css/bulma.css";
-import "styles.css";
+import "./styles.css";
 
 const root = createRoot(document.getElementById("root"));
 

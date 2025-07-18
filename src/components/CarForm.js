@@ -17,12 +17,7 @@ function CarForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    dispatch(
-      addCar({
-        name,
-        cost,
-      })
-    );
+    dispatch(addCar({ name, cost }));
   };
 
   return (
@@ -31,7 +26,7 @@ function CarForm() {
       <form onSubmit={handleSubmit}>
         <div className="field-group">
           <div className="field">
-            <label className="label">
+            <label>
               Name
               <input
                 className="input is-expanded"
@@ -42,7 +37,7 @@ function CarForm() {
           </div>
 
           <div className="field">
-            <label className="label">
+            <label>
               Cost
               <input
                 className="input is-expanded"
