@@ -1,7 +1,7 @@
 
 function CarValue() {
   return (
-    <div>CarValue</div>
+    <div className="car-value">Total Cost: ${totalCost}</div>
   )
 }
 
